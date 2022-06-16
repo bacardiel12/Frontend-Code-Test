@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section>
+        <h1 class="game-title">Tic Tac Toe</h1>
+
+        <div class="score-board">
+            <div class="row">
+                <div class="column" style="background-color:rgb(60, 124, 197);">
+                    <h2 id="xScore">X:0</h2>
+                </div>
+                <div class="column" style="background-color:rgb(50, 168, 40);">
+                    <h2 id="OScore">O:0</h2>
+                </div>
+            </div>
+            <div class="row" style="background-color:rgb(255, 230, 0);">
+                <h2 id="draws">Draws:0</h2>
+            </div>
+        </div>
+
+        <div class="game-holder">
+            <canvas onclick="handleCellClick(this.id)" id="0" width="150" height="150"></canvas>
+            <canvas onclick="handleCellClick(this.id)" id="1" width="150" height="150"></canvas>
+            <canvas onclick="handleCellClick(this.id)" id="2" width="150" height="150"></canvas>
+            <br>
+            <canvas onclick="handleCellClick(this.id)" id="3" width="150" height="150"></canvas>
+            <canvas onclick="handleCellClick(this.id)" id="4" width="150" height="150"></canvas>
+            <canvas onclick="handleCellClick(this.id)" id="5" width="150" height="150"></canvas>
+            <br>
+            <canvas onclick="handleCellClick(this.id)" id="6" width="150" height="150"></canvas>
+            <canvas onclick="handleCellClick(this.id)" id="7" width="150" height="150"></canvas>
+            <canvas onclick="handleCellClick(this.id)" id="8" width="150" height="150"></canvas>
+        </div>
+
+        <h2 id="game-status" class="game--status"></h2>
+        
+        <button class="game--restart button button2">Restart Game</button>
+    </section>
+
+    <script src="tic-tact-toe.js"></script>
+    <script src="canvasLogic.js"></script>
+</body>
+
+</html>
